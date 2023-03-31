@@ -1,0 +1,52 @@
+<!-- Combinator Selectors -->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body p{
+ 	background:red;
+}
+
+/* body div p{
+    background:yellowgreen;
+} */
+
+/* Child */
+body div > p{
+    background:yellowgreen;
+} 
+
+/* Only For First, Direct Sibling */
+body h2 + p{
+    background: green;
+}
+
+/* For All Direct Siblings */
+body h2 ~ p{
+    background: green;
+}
+
+</style>
+</head>
+<body>
+
+      <h2>Descendant Selector</h2>
+
+      <p>Paragraph 0. Not in a div.</p>
+
+      <div>
+        <p>Paragraph 1. in the div.</p>
+        <p>Paragraph 2. in the div.</p>
+        <section>
+        	<p>Paragraph 3. in the div.</p>
+        </section>
+      </div>
+
+      <p>Paragraph 4. Not in a div.</p>
+      <p>Paragraph 5. Not in a div.</p>
+
+</body>
+</html>
+
+

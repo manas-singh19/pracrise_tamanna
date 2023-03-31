@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            max-width: 70%; /* define */ 
+            /* height:auto;  */
+            height: 90px;
+            background: red; 
+            margin: auto;
+            transition: all 200ms ease-out;
+            cursor: pointer;
+        }
+        div:hover{
+            background: green;
+        }
+        .innerSnd{
+            width:40px;
+            height:40px;
+            background: yellow; 
+            margin: 0px;
+            padding: 4px;
+            transition: all 200ms ease-in-out;
+        }
+        .innerSnd:hover{
+            width: 60px;
+            height:60px;
+            background: yellowgreen;
+        } 
+        .innerSnd:nth-child(1){
+            float: right;
+        }
+        .innerThird{
+            margin-top: 10px;
+            border-radius: 12px;
+            background-color: aquamarine;
+        }
+        div:hover + .innerThird{
+            background-color: rgb(89, 8, 8);
+        }
+        
+        .innerThird{
+            
+        }
+    </style>
+</head>
+<body>
+
+   <div>
+        <div class="innerSnd">A</div>
+        <div class="innerSnd">B</div>
+   </div>
+
+   <div class="innerThird"></div>
+
+</body>
+</html>
