@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 12px;
+        }
+        .box{
+            width: 90px;
+            height:70px;
+            background-color: red;
+            padding:12px;
+        }
+        /* .translate{
+            transform: translate(10px,20px);
+        }
+        .rotate{
+            background-color: yellow;
+            transform: rotate(60deg);
+        }
+        .skew{
+            background-color: aqua;
+            transform: skewX(-45deg);
+            transform: skewY(-45deg);
+        } */
+        .scale{
+            z-index: 10 !important;
+            background-color: orange;  
+            margin-top:10px; 
+            transform: scale(1);
+            transition: all 200ms ease-in-out;
+            /* transition-delay: 2s; */
+            /* transition-duration: 1s; */
+            cursor: pointer;
+        }
+        .scale:hover{
+            transform: scale(1.2);
+            /* transform-origin: -10% -10%; */
+        } 
+        /* flexbox{
+
+        } */
+    </style>
+    
+</head>
+<body>
+    <div class="box translate">translate</div>
+    <div class="box rotate">roatate</div>  
+    <div class="box skew">skew</div>   
+    <div class="box scale">scale</div>    
+</body>
+</html>
