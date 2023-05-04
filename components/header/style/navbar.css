@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box
+}
+body{
+    font-family: sans-serif;
+}
+   /* nav{
+        background: blue !important;
+        height: 80px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+   labe .logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+    }
+    nav nav ul{ 
+        color: white;
+        float: right;
+        margin-right: 20px;
+        text-decoration: none;
+        list-style-type: none;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+    }
+    nav ul li{
+        display: inline-block;
+        line-height: 80px;
+        margin: 5px;
+        list-style: none;
+        text-decoration: none;
+    } */
+
+nav{
+    background-color: blue;
+    color:#fff;
+    width:'100%';
+    min-height: 10vh;
+    padding: 10px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}    
+nav ul{
+    display: flex ;
+    flex-direction: row;
+}
+
+nav ul li{
+    padding: 8px 16px; 
+    text-decoration: none;
+}
+nav ul li a{
+    color:#fff; 
+}
+nav ul li:hover{
+    background-color: rgb(38, 38, 255); 
+}
+nav ul li:hover a{
+    color:#fff !important;
+}
